@@ -1,0 +1,32 @@
+venv/
+.env
+image*
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Local development
+*.db
+*.sqlite3
+*.log
