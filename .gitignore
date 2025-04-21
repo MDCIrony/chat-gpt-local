@@ -5,6 +5,7 @@ image*
 __pycache__/
 *.py[cod]
 *$py.class
+.venv
 
 # Distribution / packaging
 dist/

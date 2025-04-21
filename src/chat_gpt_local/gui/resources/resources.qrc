@@ -1,0 +1,9 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/">
+        <file>fonts/Orbitron-Regular.ttf</file>
+        <file>fonts/ShareTechMono-Regular.ttf</file>
+        <file>fonts/Rajdhani-Medium.ttf</file>
+        <file>fonts/FiraCode-Regular.ttf</file>
+    </qresource>
+</RCC>

@@ -10,6 +10,19 @@ from chat_gpt_local.config.settings import settings
 from chat_gpt_local.gui.chat_window import ChatWindow
 from chat_gpt_local.utils.helpers import handle_errors
 
+# Importar recursos si existen
+try:
+    from chat_gpt_local.gui.resources import (
+        load_resources,
+        resources_rc,  # Importa los recursos compilados
+    )
+    HAS_RESOURCES = True
+except ImportError:
+    HAS_RESOURCES = False
+    print("Advertencia: No se encontraron recursos compilados.")
+    print("Las fuentes y otros recursos podrían no cargarse correctamente.")
+    print("Ejecuta 'scripts/compile_resources.py' para compilar los recursos.")
+
 
 @handle_errors
 def main() -> int:
@@ -29,6 +42,10 @@ def main() -> int:
     app = QApplication(sys.argv)
     app.setApplicationName("Chat GPT Local")
     app.setStyle("Fusion")  # Usar estilo Fusion para una apariencia moderna
+    
+    # Cargar recursos (fuentes, etc.)
+    if HAS_RESOURCES:
+        load_resources()
     
     # Crear y mostrar la ventana principal
     window = ChatWindow()

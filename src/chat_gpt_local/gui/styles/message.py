@@ -88,10 +88,30 @@ def get_markdown_css_template():
     con el color correspondiente.
     """
     return """
-        @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+        @font-face {{
+            font-family: 'Share Tech Mono';
+            src: url('qrc:/fonts/ShareTechMono-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }}
+        @font-face {{
+            font-family: 'Rajdhani';
+            src: url('qrc:/fonts/Rajdhani-Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+        }}
+        @font-face {{
+            font-family: 'Fira Code';
+            src: url('qrc:/fonts/FiraCode-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }}
+        @font-face {{
+            font-family: 'Orbitron';
+            src: url('qrc:/fonts/Orbitron-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }}
         
         body {{
             font-family: 'Rajdhani', sans-serif;

@@ -14,10 +14,12 @@ authors = [
 ]
 dependencies = [
     "openai>=1.6.0",
-    "PyQt6>=6.5.0", 
+    "PyQt6>=6.4.0",  # Versión compatible
+    "PyQt6-WebEngine>=6.4.0",  # Para QWebEngineView
     "rich>=13.3.0",
     "python-dotenv>=1.0.0",
     "pydantic>=2.4.0",
+    "markdown>=3.4.0",  # Para el soporte de Markdown
 ]
 
 [project.optional-dependencies]
